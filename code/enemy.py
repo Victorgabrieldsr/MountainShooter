@@ -4,7 +4,7 @@
 from Entity import Entity
 
 
-class Background(Entity):
+class Enemy(Entity):
     def __init__(self):
         pass
 

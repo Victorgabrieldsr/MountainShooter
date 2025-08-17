@@ -4,8 +4,11 @@
 from Entity import Entity
 
 
-class Background(Entity):
+class Player(Entity):
     def __init__(self):
+        pass
+
+    def update(self, ):
         pass
 
     def move(self, ):
