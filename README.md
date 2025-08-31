@@ -7,3 +7,12 @@ Can be played coop (2 players).
 Score is saved in database (SQLite3)
 
 ## Feel free if you want to contribute.
+
+GAME MENU
+
+<img width="567" height="349" alt="image" src="https://github.com/user-attachments/assets/dcd8e7f1-1acd-45bf-b29f-46f58c7ebe61" />
+
+GAME LEVEL 1
+
+<img width="576" height="353" alt="image" src="https://github.com/user-attachments/assets/acbae588-ae99-4624-b3fc-6bb4f8dc8c10" />
+
