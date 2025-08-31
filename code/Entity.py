@@ -19,5 +19,5 @@ class Entity(ABC):
         self.score = ENTITY_SCORE[self.name]
 
     @abstractmethod
-    def move(self, ):
+    def move(self):
         pass
