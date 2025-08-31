@@ -52,9 +52,9 @@ ENTITY_HEALTH = {
     'Player1Shot': 1,
     'Player2': 300,
     'Player2Shot': 1,
-    'Enemy1': 50,
+    'Enemy1': 70,
     'Enemy1Shot': 1,
-    'Enemy2': 60,
+    'Enemy2': 100,
     'Enemy2Shot': 1,
 }
 
@@ -107,23 +107,27 @@ ENTITY_SCORE = {
 ENTITY_SHOT_DELAY = {
     'Player1': 20,
     'Player2': 15,
-    'Enemy1': 100,
-    'Enemy2': 200,
+    'Enemy1': 80,
+    'Enemy2': 160,
 }
 
 # S
-SPAWN_TIME = 2500  # 2.5s
+SPAWN_TIME = {'Level1': 2000, 'Level2': 1500}
 
 # T
 TIMEOUT_STEP = 100  # 100ms
-TIMEOUT_LEVEL = 40000  # 20s
+TIMEOUT_LEVEL = 0
 
 # M
 MENU_OPTION = ('NEW GAME 1P',
                'NEW GAME 2P - COOPERATIVE',
                'NEW GAME 2P - COMPETITIVE',
                'SCORE',
+               'HOW THE GAME WORKS',
                'EXIT')
+
+# O
+OBJETIVE_POINTS = {'Level1': 1000, 'Level2': 3000}
 
 # P
 PLAYER_KEY_UP = {'Player1': pygame.K_UP, 'Player2': pygame.K_w}
@@ -142,14 +146,14 @@ SCORE_POS = {
     'EnterName': (WIN_WIDTH / 2, 80),
     'Label': (WIN_WIDTH / 2, 90),
     'Name': (WIN_WIDTH / 2, 110),
-    0: (WIN_WIDTH / 2, 110),
-    1: (WIN_WIDTH / 2, 130),
-    2: (WIN_WIDTH / 2, 150),
-    3: (WIN_WIDTH / 2, 170),
-    4: (WIN_WIDTH / 2, 190),
-    5: (WIN_WIDTH / 2, 210),
-    6: (WIN_WIDTH / 2, 230),
-    7: (WIN_WIDTH / 2, 250),
-    8: (WIN_WIDTH / 2, 270),
-    9: (WIN_WIDTH / 2, 290),
+    0: (WIN_WIDTH / 2, 120),
+    1: (WIN_WIDTH / 2, 140),
+    2: (WIN_WIDTH / 2, 160),
+    3: (WIN_WIDTH / 2, 180),
+    4: (WIN_WIDTH / 2, 200),
+    5: (WIN_WIDTH / 2, 220),
+    6: (WIN_WIDTH / 2, 240),
+    7: (WIN_WIDTH / 2, 260),
+    8: (WIN_WIDTH / 2, 280),
+    9: (WIN_WIDTH / 2, 300),
 }

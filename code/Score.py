@@ -17,7 +17,7 @@ class Score:
         self.rect = self.surf.get_rect(left=0, top=0)
         pass
 
-    def save(self, game_mode: str, player_score: list[int]):
+    def save(self, game_mode: str, player_score: list[int], total_time: int):
         pygame.mixer_music.load('./asset/Score.mp3')
         pygame.mixer_music.set_volume(0.3)
         pygame.mixer_music.play(-1)
@@ -48,7 +48,7 @@ class Score:
                     sys.exit()
                 elif event.type == KEYDOWN:
                     if event.key == K_RETURN and len(name) <= 12:
-                        db_proxy.save({'name': name, 'score': score, 'date': get_formatted_date()})
+                        db_proxy.save({'name': name, 'score': score, 'time': total_time, 'date': get_formatted_date()})
                         self.show()
                         return
                     elif event.key == K_BACKSPACE:
@@ -66,16 +66,20 @@ class Score:
         pygame.mixer_music.load('./asset/Score.mp3')
         pygame.mixer_music.play(-1)
         self.window.blit(source=self.surf, dest=self.rect)
-        self.score_text(20, 'TOP 10 SCORE', C_YELLOW, SCORE_POS['Title'])
-        self.score_text(20, 'NAME      SCORE              DATE    ', C_YELLOW, SCORE_POS['Label'])
+        self.score_text(20, 'TOP 10 SCORE', C_WHITE, SCORE_POS['Title'])
+        self.score_text(20, 'NAME      TIME              DATA     ', C_WHITE, SCORE_POS['Label'])
         db_proxy = DBProxy('DBScore')
         list_score = db_proxy.retrieve_top10()
         db_proxy.close()
 
         for player_score in list_score:
-            id_, name, score, date = player_score
-            self.score_text(18, f'{name}    {score:05d}        {date}', C_YELLOW,
+            id_, name, score, time, date = player_score
+            total_seconds_int = int(time)
+            minutes = total_seconds_int // 60
+            seconds = total_seconds_int % 60
+            self.score_text(19, f'{name}    {minutes:02d}:{seconds:02d}s        {date}', C_YELLOW,
                             SCORE_POS[list_score.index(player_score)])
+
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
