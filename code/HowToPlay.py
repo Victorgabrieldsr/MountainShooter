@@ -5,6 +5,7 @@ from pygame import Surface, Rect
 from pygame.font import Font
 from code.Const import WIN_WIDTH, C_WHITE, C_YELLOW
 
+
 class HowToPlay:
     def __init__(self, window: Surface):
         self.window = window
