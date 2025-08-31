@@ -6,13 +6,16 @@ Mountain Shooter is a 2D arcade game developed with Pygame. The game has 2 level
 Can be played coop (2 players).
 Score is saved in database (SQLite3)
 
+## How the game works
+
+Whether you play with 1 player or 2 players, the goal is to reach 1,000 points in the first level to advance to the next level, which requires 2,000 points. This makes a total of 3,000 points. After reaching this total, you win the game, and a screen will appear allowing you to enter your name. The game also records the time you took to win.
+
 ## Feel free if you want to contribute.
 
 GAME MENU
 
-<img width="567" height="349" alt="image" src="https://github.com/user-attachments/assets/dcd8e7f1-1acd-45bf-b29f-46f58c7ebe61" />
+<img width="571" height="345" alt="image" src="https://github.com/user-attachments/assets/c74dd42a-5c29-4cf6-8a55-f66f94448623" />
 
 GAME LEVEL 1
 
-<img width="576" height="353" alt="image" src="https://github.com/user-attachments/assets/acbae588-ae99-4624-b3fc-6bb4f8dc8c10" />
-
+<img width="569" height="345" alt="image" src="https://github.com/user-attachments/assets/d8c80c07-16de-4ed4-967d-635547b35284" />
