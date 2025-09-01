@@ -11,7 +11,6 @@ class HowToPlay:
         self.window = window
         self.surf = pygame.image.load('./asset/ScoreBg.png').convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
-        pass
 
     def show(self):
         pygame.mixer_music.load('./asset/Score.mp3')
@@ -20,8 +19,9 @@ class HowToPlay:
         while True:
             # DRAW IMAGES
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(40, "How the game works:", C_WHITE, ((WIN_WIDTH / 2), 50))
+            self.menu_text(40, "How the game works:", C_WHITE, (WIN_WIDTH / 2, 50))
 
+            # Texto explicativo
             lines = [
                 "Whether you play with 1 or 2 players,",
                 "the goal is to reach 1,000 points in the first level",
@@ -32,7 +32,15 @@ class HowToPlay:
                 "The game also records the time you took to win."
             ]
             for i, line in enumerate(lines):
-                self.menu_text(15, line, C_YELLOW, ((WIN_WIDTH / 2), 100 + i * 20))
+                self.menu_text(15, line, C_YELLOW, (WIN_WIDTH / 2, 100 + i * 20))
+
+            # Controles dos jogadores
+            controls = [
+                "Player 1: Arrow keys to move, Right Ctrl to shoot",
+                "Player 2: W A S D to move, Left Ctrl to shoot"
+            ]
+            for i, line in enumerate(controls):
+                self.menu_text(15, line, C_WHITE, (WIN_WIDTH / 2, 260 + i * 20))
 
             # Check de all events
             for event in pygame.event.get():
