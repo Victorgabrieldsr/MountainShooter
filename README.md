@@ -10,6 +10,10 @@ Score is saved in database (SQLite3)
 
 Whether you play with 1 player or 2 players, the goal is to reach 1,000 points in the first level to advance to the next level, which requires 2,000 points. This makes a total of 3,000 points. After reaching this total, you win the game, and a screen will appear allowing you to enter your name. The game also records the time you took to win.
 
+Player 1: Arrow keys to move, Right Ctrl to shoot
+
+Player 2: W A S D to move, Left Ctrl to shoot
+
 ## Feel free if you want to contribute.
 
 GAME MENU
