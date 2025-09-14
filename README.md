@@ -23,3 +23,11 @@ GAME MENU
 GAME LEVEL 1
 
 <img width="569" height="345" alt="image" src="https://github.com/user-attachments/assets/d8c80c07-16de-4ed4-967d-635547b35284" />
+
+HOW THE GAME WORKS
+
+<img width="569" height="345" alt="image" src="https://github.com/user-attachments/assets/7cd0cef0-6263-4e43-9149-0b4675173246" />
+
+SCORE
+
+<img width="569" height="342" alt="image" src="https://github.com/user-attachments/assets/4d4aceb7-d76a-4603-b535-71c455eb8066" />
