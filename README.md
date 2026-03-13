@@ -14,8 +14,6 @@ Player 1: Arrow keys to move, Right Ctrl to shoot
 
 Player 2: W A S D to move, Left Ctrl to shoot
 
-## Feel free if you want to contribute.
-
 GAME MENU
 
 <img width="571" height="345" alt="image" src="https://github.com/user-attachments/assets/c74dd42a-5c29-4cf6-8a55-f66f94448623" />
